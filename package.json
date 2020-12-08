@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.js",
-    "build": "webpack --progress --config config/webpack.prod.js"
+    "build": "webpack --progress --config config/webpack.prod.js",
+    "animation": "webpack --progress --config config/webpack.animation.js"
   },
   "license": "ISC",
   "repository": "https://github.com/Jeremboo/animated-mesh-lines.git",

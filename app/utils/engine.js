@@ -45,6 +45,10 @@ export default class Engine {
     this.update();
   }
 
+  stop() {
+    cancelAnimationFrame(this.rafId);
+  }
+
   // Update render
   update() {
     let i = this.meshCount;
@@ -53,7 +57,7 @@ export default class Engine {
     }
     this.render();
     // Loop
-    requestAnimationFrame(this.update);
+    this.rafId = requestAnimationFrame(this.update);
   }
 
   render() {

@@ -29,11 +29,6 @@ module.exports = merge(webpackCommunConfig, {
     minimizer: [
       new TerserPlugin(),
       new OptimizeCSSAssetsPlugin({}),
-    ],
-    splitChunks: {
-      // include all types of chunks (JS, CCS, ...)
-      chunks: 'all',
-      name: 'vendors',
-    },
+    ]
   },
 });
