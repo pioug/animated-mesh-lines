@@ -44,7 +44,7 @@ export default function() {
   const ANGLE_INCREMENT = 0.025;
   const RADIUS_INCREMENT = 0.02;
 
-  const COLORS = ['#dc202e', '#f7ed99', '#2d338b', '#76306b', '#ea8c2d'].map((col) => new Color(col));
+  const COLORS = ['#F42752', '#FF7C7C', '#896FFF', '#ACFFCD', '#CECECE'].map((col) => new Color(col));
   const STATIC_PROPS = {
     transformLineMethod: p => p * 1.5,
   };
